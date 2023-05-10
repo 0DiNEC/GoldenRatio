@@ -46,6 +46,11 @@
 *.mod*
 *.cmd
 .tmp_versions/
+*.vsidx
+*.suo
+*.config
+*.cache
+
 modules.order
 Module.symvers
 Mkfile.old

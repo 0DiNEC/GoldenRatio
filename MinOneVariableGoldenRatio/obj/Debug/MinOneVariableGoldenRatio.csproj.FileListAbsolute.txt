@@ -1,0 +1,8 @@
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\bin\Debug\MinOneVariableGoldenRatio.exe.config
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\bin\Debug\MinOneVariableGoldenRatio.exe
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\bin\Debug\MinOneVariableGoldenRatio.pdb
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\obj\Debug\MinOneVariableGoldenRatio.csproj.AssemblyReference.cache
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\obj\Debug\MinOneVariableGoldenRatio.csproj.SuggestedBindingRedirects.cache
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\obj\Debug\MinOneVariableGoldenRatio.csproj.CoreCompileInputs.cache
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\obj\Debug\MinOneVariableGoldenRatio.exe
+D:\study\ОАиП\GoldenRatio\MinOneVariableGoldenRatio\obj\Debug\MinOneVariableGoldenRatio.pdb
