@@ -22,6 +22,14 @@ namespace goldenRatio
                     x1 = b - (b - a) / Phi;
                     f1 = function(x1);
                 }
+                else
+                {
+                    a = x1;
+                    x1 = x2;
+                    f1 = f2;
+                    x2 = a + (b - a) / Phi;
+                    f2 = function(x2);
+                }
             }
 
             return (a + b) / 2;
