@@ -42,7 +42,7 @@ namespace goldenRatio
                 }
             }
             // Возврат найденного минимума как среднего значения интервала
-            return (a + b) / 2;
+            return (b + a) / 2;
         }
     }
     internal class Program
@@ -68,17 +68,18 @@ namespace goldenRatio
             if (!Double.TryParse(Console.ReadLine(), out b))
                 b = 1;
 
-            Console.Write("Введите необходимую точность по умолчанию (0.001)  : ");
+            Console.Write("Введите необходимую точность (точность должна быть больше 0 и меньше 1) по умолчанию (0.001)  : ");
             if (!Double.TryParse(Console.ReadLine(), out epsilon))
                 epsilon = 0.001;
 
             if (epsilon <= 0)
                 epsilon = 0.001;
 
+
             try
             {
                 // Вызов метода поиска минимума функции и вывод результата
-                double minimumF = GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon);
+                double minimumF = Math.Round(GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon), 10);
                 Console.WriteLine("Минимум функции: " + minimumF);
             }
             catch (Exception ex)
