@@ -42,7 +42,7 @@ namespace goldenRatio
                 }
             }
             // Возврат найденного минимума как среднего значения интервала
-            return (b + a) / 2;
+            return (a + b) / 2;
         }
     }
     internal class Program
@@ -51,6 +51,16 @@ namespace goldenRatio
         public static double PowFunction(double x)
         {
             return x * x;
+        }
+
+        public static double LocalMinF(double x)
+        {
+            return Math.Pow(x, 4) - 4 * Math.Pow(x, 2) + 5;
+        }
+
+        public static double Func(double x)
+        {
+            return Math.Pow(x, 3) - 6 * Math.Pow(x, 2) + 9 * x + 2;
         }
 
         static void Main(string[] args)
@@ -78,8 +88,7 @@ namespace goldenRatio
 
             try
             {
-                // Вызов метода поиска минимума функции и вывод результата
-                double minimumF = Math.Round(GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon), 10);
+              double minimumF = Math.Round(GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon), 5);
                 Console.WriteLine("Минимум функции: " + minimumF);
             }
             catch (Exception ex)
