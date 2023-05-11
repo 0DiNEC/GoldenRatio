@@ -56,14 +56,20 @@ namespace goldenRatio
             Console.Write("Введите начальную правую границу интервала, (по умолчанию: 1)  :");
             if (!Double.TryParse(Console.ReadLine(), out b))
                 b = 1;
-            
+
             Console.Write("Введите необходимую точность по умолчанию (0.0001)  : ");
             if (!Double.TryParse(Console.ReadLine(), out epsilon))
                 epsilon = 0.0001;
 
-
-            double minimumF = GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon);
-            Console.WriteLine("Минимум функции: " + minimumF);
+            try
+            {
+                double minimumF = GoldenSectionSearch.FindMinimum(PowFunction, a, b, epsilon);
+                Console.WriteLine("Минимум функции: " + minimumF);
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("Произошла ошибка: " + ex.Message);
+            }
 
             Console.ReadKey();
         }
