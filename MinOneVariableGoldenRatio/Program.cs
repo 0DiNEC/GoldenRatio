@@ -78,7 +78,7 @@ namespace goldenRatio
             if (!Double.TryParse(Console.ReadLine(), out b))
                 b = 1;
 
-            Console.Write("Введите необходимую точность (точность должна быть больше 0 и меньше 1) по умолчанию (0.001)  : ");
+            Console.Write("Введите необходимую точность \n (чем меньше точность тем более качественный результат, однако значение должно быть больше 0) по умолчанию (0.001)  : ");
             if (!Double.TryParse(Console.ReadLine(), out epsilon))
                 epsilon = 0.001;
 
